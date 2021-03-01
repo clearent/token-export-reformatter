@@ -20,7 +20,7 @@ cannot open the files to manipulate them.  However, this small script can be run
 # Usage
 Execute the script using python:  `python create_csv.py`
 
-You will be prompted for the path to the existing (decrypted) file.  (e.g. `/Users/jdoe/00000123456_clearent_export.gpg`)
+You will be prompted for the path to the existing (decrypted) file.  (e.g. `/Users/jdoe/00000123456_clearent_export.txt`)
 
 You will also be prompted for the desired path of the output file.  (e.g. `/Users/jdoe/export.csv`)
 
