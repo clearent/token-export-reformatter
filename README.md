@@ -29,7 +29,7 @@ The result will be a comma-delimited file with a row of headers to denote each p
 # Legacy Tokens
 The last column titled "description_or_legacy_token_id" has a dual purpose.  In many cases, the value of the
 description column is a string of text to indicate the purpose of the card.  (i.e. `Primary Visa`)  However,
-Clearent also offers the ability to use token IDs imported from a prevoius processor.  Integrators can pass in
+Clearent also offers the ability to use token IDs imported from a previous processor.  Integrators can pass in
 a flag to tell our gateway to use the value of the description field as the token ID (rather than the Clearent-generated
 ID) when running transactions with a token.  If there are values in this field, please check with your contact
 to confirm if/how they are using these token IDs in their software.
