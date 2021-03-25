@@ -1,6 +1,6 @@
 def sanitize(data):
     data = data.replace(',', '')  # remove any commas
-    data = data.rstrip()          # remove trailing whitespace
+    data = data.rstrip()  # remove trailing whitespace
     return data
 
 
@@ -24,12 +24,11 @@ try:
                     last_name = sanitize(line[118:148])
                     desc = sanitize(line[148:403])
 
-                    record = card_number + ',' + exp + ',' + token + ',' + address + ',' + postal_code + ',' + \
-                        first_name + ',' + last_name + ',' + desc + '\n'
+                    record = '%s,%s,%s,%s,%s,%s,%s,%s\n' % (
+                        card_number, exp, token, address, postal_code, first_name, last_name, desc)
 
                     output_file.write(record)
 
 except SyntaxError:
     print('Python 2 is no longer supported. Please run this script using Python 3.')
     exit(1)
-
