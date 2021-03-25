@@ -15,7 +15,7 @@ try:
             output_file.write(headers)
             for line in f:
                 if line.startswith('data:'):
-                    card_number = line[5:19]
+                    card_number = line[5:21].rstrip()
                     exp = line[26:28] + line[24:26]
                     token = line[29:48]
                     address = sanitize(line[59:79])
@@ -32,3 +32,4 @@ try:
 except SyntaxError:
     print('Python 2 is no longer supported. Please run this script using Python 3.')
     exit(1)
+
